@@ -7,6 +7,8 @@
       "credit_card_number": "4111111111111111",
       "credit_card_expiration_date": "0121",
       "credit_card_cvv": "123",
+      "date": "10/10/2010 : 10:30",
+      "status": "paid",
       "amount": 10000
     },
     {
@@ -17,6 +19,7 @@
       "credit_card_cvv": "123",
       "amount": 10000,
       "status": "refused",
+      "date": "10/10/2010 : 10:30",
       "id": 2
     },
     {
@@ -27,6 +30,7 @@
       "credit_card_cvv": "123",
       "amount": 10000,
       "status": "refused",
+      "date": "10/10/2010 : 10:30",
       "id": 3
     },
     {
@@ -37,6 +41,7 @@
       "credit_card_cvv": "123",
       "amount": 10000,
       "status": "paid",
+      "date": "10/10/2010 : 10:30",
       "id": 4
     },
     {
@@ -47,6 +52,7 @@
       "credit_card_cvv": "123",
       "amount": 10000,
       "status": "paid",
+      "date": "10/10/2010 : 10:30",
       "id": 5
     },
     {
@@ -57,6 +63,7 @@
       "credit_card_cvv": "123",
       "amount": 10000,
       "status": "refused",
+      "date": "10/10/2010 : 10:30",
       "id": 6
     }
   ]

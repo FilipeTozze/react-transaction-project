@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import LabelValue from "../../../components/LabelValue";
 import { getTransactions } from "../../../services/TransactionService";
 import ItemList from "./ItemList";
+import StatusBar from "../../../components/StatusBar";
+import Button from "../../../components/Button";
 
 import {
   Container,
@@ -33,7 +35,7 @@ function ListTransactions() {
       <ItemList
         key={index}
         name={item.credit_card_holder_name}
-        dtTransaction="12312512312"
+        dtTransaction={item.date}
         status={item.status}
         value={item.amount}
       />
@@ -52,6 +54,7 @@ function ListTransactions() {
   return (
     <Container>
       <Content>
+        <StatusBar name="Figma" date="9:04 AM" />
         <TransactionsInfo>
           <LabelValue
             label="Número de transações"
@@ -63,6 +66,7 @@ function ListTransactions() {
           />
         </TransactionsInfo>
         <TransactionItems>{RenderItem()}</TransactionItems>
+        <Button showAddIcon="true" label="Criar Nova Transação" />
       </Content>
     </Container>
   );
