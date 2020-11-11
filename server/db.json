@@ -65,6 +65,17 @@
       "status": "refused",
       "date": "10/10/2010 : 10:30",
       "id": 6
+    },
+    {
+      "credit_card_holder_name": "aaaaaa",
+      "buyer_document": "12345678912",
+      "credit_card_number": "1111222233334444",
+      "credit_card_expiration_date": "10/2020",
+      "credit_card_cvv": "123",
+      "amount": "6985",
+      "date": "10/11/2020 : 23:50",
+      "status": "paid",
+      "id": 7
     }
   ]
 }

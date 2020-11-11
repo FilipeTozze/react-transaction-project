@@ -26,3 +26,27 @@ export const getTransactions = async () => {
 
   }
 };
+
+export const saveTransactions = async (transaction) => {
+  try {
+    const source = CancelToken.source();
+    let response = null;
+
+    setTimeout(() => {
+      if (response == null) {
+        source.cancel();
+      }
+    }, 15000);
+
+    response = await API.post(`transactions`, transaction ,{cancelToken: source.token}).then(createTransaction => {
+        console.log(createTransaction);
+        return createTransaction.data;
+    })
+    .catch(error => {
+        console.log("error ", error);
+    })
+    return response;
+  } catch (error) {
+
+  }
+};

@@ -44,6 +44,7 @@ export const Date = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
+  font-weight: 600;
 `;
 
 export const BatteryInfo = styled.div`

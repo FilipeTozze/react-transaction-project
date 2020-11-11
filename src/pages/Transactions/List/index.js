@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import {useHistory} from 'react-router-dom';
+
 import LabelValue from "../../../components/LabelValue";
 import { getTransactions } from "../../../services/TransactionService";
 import ItemList from "./ItemList";
@@ -6,15 +8,15 @@ import StatusBar from "../../../components/StatusBar";
 import Button from "../../../components/Button";
 
 import {
-  Container,
-  Content,
   TransactionsInfo,
   TransactionItems,
 } from "./styles";
+import { ContainerG, ContentG } from "../../../styles/GlobalStyles";
 
 function ListTransactions() {
   const [transactions, setTransaction] = useState([]);
   const [totalTransaction, setTotalTransaction] = useState(0);
+  const history = useHistory();
 
   useEffect(() => {
     getTransactions().then((listTransactions) => {
@@ -51,9 +53,14 @@ function ListTransactions() {
     return valueFormated;
   };
 
+  function newTransaction(){
+    console.log("chegou na função")
+    history.push('/newTransaction');
+  }
+
   return (
-    <Container>
-      <Content>
+    <ContainerG>
+      <ContentG>
         <StatusBar name="Figma" date="9:04 AM" />
         <TransactionsInfo>
           <LabelValue
@@ -66,9 +73,9 @@ function ListTransactions() {
           />
         </TransactionsInfo>
         <TransactionItems>{RenderItem()}</TransactionItems>
-        <Button showAddIcon="true" label="Criar Nova Transação" />
-      </Content>
-    </Container>
+        <Button onSubmit={newTransaction} showAddIcon="true"  label="Criar Nova Transação"  />
+      </ContentG>
+    </ContainerG>
   );
 }
 

@@ -5,7 +5,28 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => Colors.white};
+  background-color: ${(props) => props.disabled ? Colors.buttonDisabled  : Colors.buttonBackground};
+  height: 5rem;
+  color: ${(props) => props.disabled ? '#72737A' : Colors.white};
+  border-radius: 1rem;
+  :hover {
+    ${props => !props.disabled && "opacity: 0.6; cursor: pointer;"}
+    
+  }
+`;
+
+export const Btn = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-sizing: none;
+  outline: none;
+  background-color: transparent;
+  color: ${(props) => props.disabled ? '#72737A' : Colors.white};
+  :hover {
+    ${props => !props.disabled && "cursor: pointer;"}
+  }
   
 `;
 
@@ -13,14 +34,9 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => Colors.buttonBackground};
-  color: ${(props) => Colors.white};
-  height: 5rem;
-  border-radius: 1rem;
-  width: 35rem;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-  cursor: pointer;
+  
+ 
+  
 `;
 
 export const Icon = styled.div`

@@ -8,6 +8,8 @@ export default {
     darkFundo: '#24272C',
 
     buttonBackground: '#3F2787',
+    buttonDisabled: '#F2F2F3',
+    borderColorInput: '#8B8B92',
 
     light: '#F5F5F5',
     lightText: '#757575',

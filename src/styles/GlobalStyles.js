@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import Colors from './Colors';
 
 export default createGlobalStyle`
@@ -46,3 +46,15 @@ export default createGlobalStyle`
     }
 
 `
+
+export const ContainerG = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ContentG = styled.div`
+    background-color: ${props => Colors.white};
+    width: 50rem;
+    height: 70vh;
+`;
