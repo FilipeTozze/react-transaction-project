@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;
-  width: 50rem;
+  width: 100%;
   height: 2.5rem;
   background-color: ${(props) => Colors.lightFundo};
   padding: 0 0.5rem 0 0.5rem;

@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import Colors from './Colors';
+import styled, { createGlobalStyle } from "styled-components";
+import Colors from "./Colors";
 
 export default createGlobalStyle`
     * {
@@ -24,7 +24,7 @@ export default createGlobalStyle`
         width: 100%;
 
         margin-top: 2rem;
-        background-color: ${props => Colors.fundo};
+        background-color: ${(props) => Colors.fundo};
     }
 
     @media (max-width: 630px) {
@@ -45,16 +45,21 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
-`
+`;
 
 export const ContainerG = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ContentG = styled.div`
-    background-color: ${props => Colors.white};
-    width: 50rem;
-    height: 70vh;
+  background-color: ${(props) => Colors.white};
+  width: 50rem;
+  height: 70vh;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100vh;
+  }
 `;
