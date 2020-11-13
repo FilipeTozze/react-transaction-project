@@ -5,13 +5,13 @@ Este projeto simula uma aplicação mobile onde é possível verificar históric
 
 ## Tecnologias Utilizadas
 
-[Create React App](https://github.com/facebook/create-react-app)
-[Redux](https://redux.js.org/)
-[Styled](https://styled-components.com/)
-[Axios](https://github.com/axios/axios)
-[Unform](https://unform.dev/)
-[Json Server](https://github.com/typicode/json-server)
-[Yarn](https://yarnpkg.com/)
+ - [Create React App](https://github.com/facebook/create-react-app)
+ - [Redux](https://redux.js.org/)
+ - [Styled](https://styled-components.com/)
+ - [Axios](https://github.com/axios/axios)
+ - [Unform](https://unform.dev/)
+ - [Json Server](https://github.com/typicode/json-server)
+ - [Yarn](https://yarnpkg.com/)
 
 
 ### Iniciando a aplicação
